@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box; /* This adds the the padding and border units in an element's total width and height*/
+}
+
+body {
+    background-color: #d5e1ef;
+    min-height: 100vh; /* vh unit is relative to 1% of the viewports height. This makes the height of the page according to 
+    the user's viewing device */
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    border: 1px solid black;
+    margin: 0 auto;
+
+    /* Needed to make the body element a flexbox in order to center the QR card. This took me a little while to realize */
+    display: flex; 
+    flex-direction: column;
+}
+
+h2 {
+    color: #263145;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 15px 0px 15px;
+}
+
+p {
+    color: hsl(220, 15%, 55%);
+    text-align: center;
+    font-weight: 400;
+    padding: 0 15px 15px 15px;
+}
+
+.qr-card {
+    background-color: white;
+    margin: auto;
+    width: 320px;
+    padding: 17px;
+    display: flex;
+    flex-direction: column; /* This makes it so that the elements don't sit beside each other horizontally */
+    justify-content: center; /* This justifies content on the x-axis */
+    align-items: center; /* This justifies content on the y-axis */
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px 15px hsl(212, 45%, 89%);
+    
+}
+
+.qr-card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+a:link {
+    color: #263145;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:visited {
+    color: white;
+}
